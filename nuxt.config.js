@@ -1,12 +1,15 @@
 
 const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
   router: {
-    base: './'
+    base: '/gold/dist'
   }
 } : {};
 module.exports = {
   ...routerBase,
   mode: 'universal',
+  generate:{
+    dir:'dist/prod'
+  },
   /*
   ** Headers of the page
   */
