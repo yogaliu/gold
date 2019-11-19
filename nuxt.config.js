@@ -1,7 +1,7 @@
 
 const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
   router: {
-    base: '/gold/'
+    base: '/gold/dist/'
   }
 } : {};
 module.exports = {
