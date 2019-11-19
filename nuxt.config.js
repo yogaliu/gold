@@ -7,9 +7,6 @@ const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
 module.exports = {
   ...routerBase,
   mode: 'universal',
-  generate:{
-    dir:'dist/prod'
-  },
   /*
   ** Headers of the page
   */
